@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="description"
+    content="Antonio Toledo — Computer Science student exploring frontend development and software engineering.">
+  <title>Antonio Toledo — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav-item" aria-label="Primary navigation">
+      <a class="logo" href="#hero" aria-label="Antonio Toledo, home">AT<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="primary-navigation">
+        <ul>
+          <li><a href="#hero" aria-current="location">Hero</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-container hero" id="hero" aria-labelledby="hero-title">
+      <div class="phone hero-enter hero-enter--portrait">
+        <img src="antonio.jpg" alt="Portrait of Antonio Toledo" width="640" height="640">
+      </div>
+      <div class="text">
+        <div class="status hero-enter hero-enter--title">
+          <h1 id="hero-title"><span class="frontend">FRONTEND</span><span class="dev">DEVELOPER</span></h1>
+          <p class="disc hero-enter hero-enter--description">Aspiring Software Engineer and AI Engineer.</p>
+        </div>
+        <div class="homebutton hero-enter hero-enter--actions">
+          <a class="button button--light" href="#skills">Explore my skills <span aria-hidden="true">↘</span></a>
+          <a class="button button--outline" href="https://github.com/Tonnyton30" target="_blank"
+            rel="noopener noreferrer">View GitHub profile <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <a class="scroll-note" href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="content-section about-section" id="about" aria-labelledby="about-title">
+      <div class="section-inner">
+        <h2 class="reveal" id="about-title">Hey, I'm Antonio!</h2>
+        <div class="about-copy reveal reveal--step-1">
+          <p>A Computer Science student with a growing passion for web development and software engineering. I love
+            exploring new technologies, experimenting with code, and creating things that combine functionality with
+            thoughtful design.</p>
+          <p>Still learning, still building, and always looking for ways to get better.</p>
+        </div>
+        <div class="learning-details reveal reveal--step-2">
+          <p><span>Currently</span>First-Year Computer Science Student</p>
+          <p><span>Focused on</span>Frontend Development and Software Engineering</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-inner">
+        <div class="section-heading-row reveal">
+          <h2 id="skills-title">What I'm learning.</h2>
+          <p>Tools and workflows I use as I build.</p>
+        </div>
+      </div>
+      <div class="marquee" aria-label="Skills and technologies">
+        <ul class="marquee-track">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Java</li>
+          <li>Visual Studio Code</li>
+          <li>AI-Assisted Development</li>
+        </ul>
+        <ul class="marquee-track marquee-track--clone" aria-hidden="true" inert>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Java</li>
+          <li>Visual Studio Code</li>
+          <li>AI-Assisted Development</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-inner">
+        <div class="section-heading-row reveal"><h2 id="projects-title">Things I've built.</h2><p>Projects from my learning journey.</p></div>
+        <div class="card-grid">
+          <div class="card-slot reveal">
+            <article class="project-card">
+              <div class="card-body">
+                <h3>Brew &amp; Bloom</h3>
+                <p>Coffee shop website with a responsive navbar and menu.</p>
+                <ul class="tag-list" aria-label="Technologies used"><li>HTML</li><li>CSS</li></ul>
+              </div>
+            </article>
+          </div>
+          <div class="card-slot reveal">
+            <article class="project-card">
+              <div class="card-body">
+                <h3>Game Design Project</h3>
+                <p>Grade 12 SHS project (2025) where I worked on animation, UI, creative level design, and missions.</p>
+                <ul class="tag-list" aria-label="Tools used"><li>Aseprite</li><li>Canva</li><li>ChatGPT</li></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section--alt" id="experience" aria-labelledby="experience-title">
+      <div class="section-inner">
+        <h2 class="reveal" id="experience-title">Experience.</h2>
+        <ol class="experience-list">
+          <li class="experience-item reveal">
+            <p class="experience-date"><time datetime="2026-04-20">Apr 20</time> – <time datetime="2026-04-30">Apr 30, 2026</time></p>
+            <div class="experience-body">
+              <h3>Office Assistant</h3>
+              <p class="experience-org">DICT Muzon</p>
+              <ul class="tag-list" aria-label="Placement type"><li>Work Immersion</li><li>10 days</li></ul>
+              <p class="experience-desc">Completed a 10-day Work Immersion placement as an office assistant.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="content-section" id="certificates" aria-labelledby="certificates-title">
+      <div class="section-inner">
+        <h2 class="reveal" id="certificates-title">Certificates.</h2>
+        <div class="card-grid card-grid--two">
+          <div class="card-slot reveal"><article class="cert-card">
+            <div class="card-body">
+              <h3>BSCS Symposium 2026: Technology In One Community</h3>
+              <p class="cert-issuer">Immaculada Concepcion College of Soldiers Hills Caloocan City Inc.</p>
+              <p class="cert-date"><time datetime="2026-11-06">November 6, 2026</time></p>
+              <a href="images/certificates/bscs-symposium-2026.pdf" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span></a>
+            </div>
+          </article></div>
+          <div class="card-slot reveal"><article class="cert-card">
+            <div class="card-body">
+              <h3>Data Privacy Awareness</h3>
+              <p class="cert-issuer">ICT Literacy and Competency Development Bureau, DICT Bulacan, with the National Privacy Commission</p>
+              <p class="cert-date"><time datetime="2026-10-27">October 27, 2026</time></p>
+              <a href="images/certificates/data-privacy-awareness-2026.pdf" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span></a>
+            </div>
+          </article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section contact-section section--alt" id="contact" aria-labelledby="contact-title">
+      <div class="section-inner">
+        <h2 class="reveal" id="contact-title">Let's Connect.</h2>
+        <p class="contact-copy reveal reveal--step-1">Have a question, project idea, or opportunity? Feel free to send
+          me an email. I'd be happy to hear from you.</p>
+        <a class="button button--light email-button reveal reveal--step-2" href="mailto:"
+          aria-label="Send Antonio an email (email address not configured)">Send Me an Email <span
+            aria-hidden="true">↗</span></a>
+      </div>
+      <footer class="site-footer"><span>ANTONIO TOLEDO</span><span>© 2026</span></footer>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
