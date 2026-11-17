@@ -210,6 +210,7 @@ main {
   transform-origin: center bottom;
   border-radius: 0;
   filter: none;
+  border-radius: 50%;
 }
 .homebutton {
   position: absolute;
@@ -675,12 +676,29 @@ main {
     font-size: clamp(3.25rem, 11vw, 5.8rem);
   }
   .disc {
-    top: clamp(5.75rem, 12vh, 7.5rem);
+    top: clamp(3.75rem, 1vh, 5.5rem);
     font-size: 0.85rem;
   }
   .phone {
+    top: 50%;
+    transform: translate(-50%, -50%);
     bottom: 8rem;
-    width: min(100vw, clamp(375px, 58.5svh, 457.5px));
+    width: min(50vw, clamp(375px, 58.5svh, 457.5px));
+    bottom: 10rem;
+    width: min(100vw, 400px);
+    aspect-ratio: 1;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 50%;
+  }
+  .phone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    transform: none;
+    border: 0;
+    border-radius: 50%;
   }
   .homebutton {
     right: 20px;
