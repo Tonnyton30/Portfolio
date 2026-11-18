@@ -14,11 +14,12 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .nav-item,
   .page-container,
   .section-inner,
-  .site-footer {
+  .site-footer,
+  .hero-inner {
     width: min(100% - 40px, var(--content-width));
   }
   .menu-toggle {
@@ -75,22 +76,21 @@
     border-bottom: 1px solid #e8e8e8;
   }
   .hero {
-    min-height: max(760px, calc(100svh - var(--header-height)));
+    height: 760px;
   }
   .hero-title {
-    font-size: clamp(3.25rem, 11vw, 5.8rem);
+    top: 24px;
+    font-size: 3.5rem;
   }
   .disc {
-    top: clamp(3.75rem, 1vh, 5.5rem);
+    top: 108px;
     font-size: 0.85rem;
   }
   .phone {
     top: 50%;
     transform: translate(-50%, -50%);
-    bottom: 8rem;
-    width: min(50vw, clamp(375px, 58.5svh, 457.5px));
-    bottom: 10rem;
-    width: min(100vw, 400px);
+    bottom: auto;
+    width: min(100%, 400px);
     aspect-ratio: 1;
     overflow: hidden;
     border: 1px solid #000;
@@ -106,9 +106,9 @@
     border-radius: 50%;
   }
   .homebutton {
-    right: 20px;
+    right: 0;
     bottom: 3rem;
-    left: 20px;
+    left: 0;
     flex-direction: column;
     align-items: center;
   }
@@ -116,7 +116,7 @@
     width: min(100%, 340px);
   }
   .scroll-note {
-    right: 20px;
+    right: 0;
     bottom: 0.8rem;
   }
   .section-heading-row {
