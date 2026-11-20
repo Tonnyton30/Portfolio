@@ -131,14 +131,6 @@
     margin-top: 2rem;
     gap: 1.25rem;
   }
-  .experience-list {
-    margin-top: 2rem;
-  }
-  .experience-item {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    padding: 1.5rem;
-  }
   .section-heading-row h2 {
     font-size: clamp(2.8rem, 10vw, 4.5rem);
   }
@@ -175,9 +167,6 @@
     padding-block: 4.5rem;
   }
   .card-body {
-    padding: 1.25rem;
-  }
-  .experience-item {
     padding: 1.25rem;
   }
 }
