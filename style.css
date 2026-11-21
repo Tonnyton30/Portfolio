@@ -210,6 +210,8 @@ main {
   transform: translateX(-50%);
 }
 .phone img {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   height: 100%;
@@ -617,4 +619,3 @@ main {
     transform: translateY(0);
   }
 }
-/* this */
