@@ -296,8 +296,12 @@ main {
 }
 
 .content-section {
-  border-top: 1px solid var(--border);
-  scroll-margin-top: 0;
+  width: min(calc(100% - clamp(32px, 6vw, 96px)), 1280px);
+  margin: 24px auto;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 36px;
+  scroll-margin-top: 24px;
 }
 .section-inner {
   padding-block: clamp(5rem, 12vw, 9rem);

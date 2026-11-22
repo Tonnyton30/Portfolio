@@ -78,6 +78,11 @@
   .hero {
     height: 585px;
   }
+  .content-section {
+    width: calc(100% - 32px);
+    margin-block: 16px;
+    border-radius: 28px;
+  }
   .hero-inner {
     height: 100%;
     --mobile-phone-size: min(100%, 250px);
@@ -170,6 +175,10 @@
   }
   .section-inner {
     padding-block: 4.5rem;
+  }
+  .content-section {
+    width: calc(100% - 24px);
+    border-radius: 24px;
   }
   .card-body {
     padding: 1.25rem;
