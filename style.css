@@ -8,8 +8,7 @@
   --white: #fff;
   --muted: #b3b3b3;
   --border: #292929;
-  --content-width: 81vw;
-  --header-height: 10vh;
+  --header-height: 82px;
   font-family: "DM Sans", Arial, sans-serif;
   color: var(--white);
   background: var(--black);
@@ -26,7 +25,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  min-width: 100%;
+  min-width: 320px;
   margin: 0;
   background: var(--black);
   font-size: 1rem;
@@ -61,7 +60,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(100% - 4vw, var(--content-width));
+  width: 82%;
   height: 100%;
   min-height: var(--header-height);
   margin-inline: auto;
@@ -106,14 +105,14 @@ main {
 }
 .page-container,
 .section-inner {
-  width: min(100% - 4vw, var(--content-width));
+  width: 82%;
   margin-inline: auto;
 }
 .hero {
   position: relative;
   isolation: isolate;
   width: 100%;
-  height: 95vh;
+  height: 760px;
   margin: 0;
   overflow: hidden;
   color: #000;
@@ -121,8 +120,8 @@ main {
 }
 .hero-inner {
   position: relative;
-  width: min(100% - 4vw, var(--content-width));
-  height: 95vh;
+  width: 82%;
+  height: 760px;
   margin-inline: auto;
 }
 .hero-title {
@@ -141,8 +140,8 @@ main {
 }
 .visually-hidden {
   position: absolute;
-  width: 0.12vh;
-  height: 0.12vh;
+  width: 1px;
+  height: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
@@ -202,7 +201,7 @@ main {
   z-index: 2;
   bottom: 0;
   left: 50%;
-  width: 36vw;
+  width: 520px;
   aspect-ratio: 3 / 4;
   padding: 0;
   border: 0;
@@ -240,7 +239,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  min-height: 6.5vh;
+  min-height: 52px;
   padding: 0.8rem 1.25rem;
   border: 1px solid transparent;
   border-radius: 999px;
@@ -296,6 +295,8 @@ main {
 }
 
 .content-section {
+  width: 100%;
+  height: auto;
   border-top: 1px solid var(--border);
   scroll-margin-top: 0;
 }
@@ -306,7 +307,7 @@ main {
   background: var(--surface);
 }
 .content-section h2 {
-  max-width: 59vw;
+  max-width: 850px;
   margin: 0;
   font:
     600 clamp(2.8rem, 7vw, 5.8rem)/1 "Space Grotesk",
@@ -314,7 +315,7 @@ main {
   letter-spacing: -0.075em;
 }
 .about-copy {
-  max-width: 49vw;
+  max-width: 700px;
   margin-top: 2.5rem;
   color: #d0d0d0;
   font-size: clamp(1.05rem, 1.5vw, 1.25rem);
@@ -326,7 +327,7 @@ main {
 .learning-details {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  max-width: 49vw;
+  max-width: 700px;
   gap: 1.5rem 3rem;
   margin-top: 3rem;
   padding-top: 1.5rem;
@@ -355,7 +356,7 @@ main {
   gap: 2rem;
 }
 .section-heading-row p {
-  max-width: 18vw;
+  max-width: 260px;
   margin: 0 0 0.35rem;
   color: var(--muted);
 }
@@ -471,7 +472,7 @@ main {
 .cert-card a {
   display: inline-flex;
   align-items: center;
-  min-height: 5.5vh;
+  min-height: 44px;
   color: var(--white);
   text-underline-offset: 4px;
 }
@@ -494,8 +495,8 @@ main {
   top: calc(0.96rem - 10px);
   left: -2.75rem;
   z-index: 1;
-  width: 2.5vh;
-  height: 2.5vh;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: var(--white);
   content: "";
@@ -505,7 +506,7 @@ main {
   top: calc(0.96rem + 10px + 1rem);
   height: calc(100% + 3.5rem - 20px - 2rem);
   left: calc(-2.75rem + 9px);
-  width: 0.25vh;
+  width: 2px;
   background: rgba(255, 255, 255, 0.5);
   content: "";
 }
@@ -556,13 +557,12 @@ main {
 }
 .contact-section {
   position: relative;
-  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .contact-copy {
-  max-width: 40vw;
+  max-width: 570px;
   margin: 1.5rem 0 2rem;
   color: var(--muted);
   font-size: 1.1rem;
@@ -570,7 +570,7 @@ main {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  width: min(100% - 4vw, var(--content-width));
+  width: 82%;
   margin: 0 auto;
   padding: 1.5rem 0;
   border-top: 1px solid var(--border);
