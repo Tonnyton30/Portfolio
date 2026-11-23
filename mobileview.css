@@ -1,6 +1,5 @@
 @media (min-width: 761px) and (max-width: 1024px) {
   .page-container,
-  .section-inner,
   .site-footer {
     width: 92%;
   }
@@ -17,9 +16,7 @@
 @media (max-width: 768px) {
   .nav-item,
   .page-container,
-  .section-inner,
-  .site-footer,
-  .hero-inner {
+  .site-footer {
     width: 90%;
   }
   .menu-toggle {
@@ -154,7 +151,6 @@
 @media (max-width: 420px) {
   .nav-item,
   .page-container,
-  .section-inner,
   .site-footer {
     width: 92%;
   }

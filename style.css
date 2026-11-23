@@ -120,9 +120,11 @@ main {
 }
 .hero-inner {
   position: relative;
-  width: 82%;
+  width: auto;
+  max-width: 82rem;
   height: 760px;
   margin-inline: auto;
+  padding-inline: 1rem;
 }
 .hero-title {
   position: absolute;
@@ -301,6 +303,10 @@ main {
   scroll-margin-top: 0;
 }
 .section-inner {
+  width: auto;
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
   padding-block: clamp(5rem, 12vw, 9rem);
 }
 .section--alt {
