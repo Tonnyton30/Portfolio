@@ -366,10 +366,13 @@ main {
   margin: 0 0 0.35rem;
   color: var(--muted);
 }
+.marquee-viewport {
+  width: 100%;
+  overflow: hidden;
+}
 .marquee {
   display: flex;
   width: max-content;
-  gap: 1rem;
   animation: marquee-scroll 34s linear infinite;
 }
 .marquee-track {
@@ -378,25 +381,21 @@ main {
   align-items: center;
   gap: 1rem;
   margin: 0;
-  padding: 0 0 5rem;
+  padding: 0 1rem 5rem 0;
   list-style: none;
 }
 .marquee-track li {
-  padding: 0.85rem 1.25rem;
+  display: flex;
+  flex: 0 0 14rem;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #383838;
   border-radius: 999px;
   color: #e5e5e5;
   background: #151515;
   white-space: nowrap;
-  transition:
-    color 0.2s ease,
-    border-color 0.2s ease,
-    background 0.2s ease;
-}
-.marquee-track li:hover {
-  border-color: var(--white);
-  color: var(--black);
-  background: var(--white);
+  pointer-events: none;
 }
 .card-grid {
   display: grid;
@@ -542,7 +541,7 @@ main {
 }
 @keyframes marquee-scroll {
   to {
-    transform: translateX(-50%);
+    transform: translateX(-25%);
   }
 }
 @keyframes hero-marquee-left {
