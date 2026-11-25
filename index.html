@@ -4,10 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#fff">
   <meta name="description"
     content="Antonio Toledo — Computer Science student exploring frontend development and software engineering.">
   <title>Antonio Toledo — Portfolio</title>
+  <link rel="icon" href="path/to/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobileview.css">
 </head>
@@ -22,7 +27,7 @@
       </button>
       <div class="nav-links" id="primary-navigation">
         <ul>
-          <li><a href="#hero" aria-current="location">Hero</a></li>
+          <li><a href="#hero" aria-current="location">Home</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -43,14 +48,16 @@
             <span class="hero-marquee__track">
               <span class="hero-marquee__group">
                 <span>Frontend Developer</span><span>Frontend Developer</span><span>Frontend Developer</span>
+                <span>Frontend Developer</span><span>Frontend Developer</span><span>Frontend Developer</span>
               </span>
               <span class="hero-marquee__group" aria-hidden="true">
+                <span>Frontend Developer</span><span>Frontend Developer</span><span>Frontend Developer</span>
                 <span>Frontend Developer</span><span>Frontend Developer</span><span>Frontend Developer</span>
               </span>
             </span>
           </span>
         </h1>
-        <p class="disc">
+        <p class="hero-subtitle">
           <span class="visually-hidden">Aspiring Software Engineer and AI Engineer.</span>
           <span class="hero-marquee hero-marquee--subtitle" aria-hidden="true">
             <span class="hero-marquee__track">
@@ -58,8 +65,14 @@
                 <span>Aspiring Software Engineer &amp; AI Engineer</span>
                 <span>Aspiring Software Engineer &amp; AI Engineer</span>
                 <span>Aspiring Software Engineer &amp; AI Engineer</span>
+                <span>Aspiring Software Engineer &amp; AI Engineer</span>
+                <span>Aspiring Software Engineer &amp; AI Engineer</span>
+                <span>Aspiring Software Engineer &amp; AI Engineer</span>
               </span>
               <span class="hero-marquee__group" aria-hidden="true">
+                <span>Aspiring Software Engineer &amp; AI Engineer</span>
+                <span>Aspiring Software Engineer &amp; AI Engineer</span>
+                <span>Aspiring Software Engineer &amp; AI Engineer</span>
                 <span>Aspiring Software Engineer &amp; AI Engineer</span>
                 <span>Aspiring Software Engineer &amp; AI Engineer</span>
                 <span>Aspiring Software Engineer &amp; AI Engineer</span>
@@ -67,10 +80,10 @@
             </span>
           </span>
         </p>
-        <div class="phone" aria-hidden="true">
+        <div class="hero-photo" aria-hidden="true">
           <img src="antonio.png" alt="" width="480" height="640">
         </div>
-        <div class="homebutton">
+        <div class="hero-actions">
           <a class="button button--light" href="#skills">Explore my skills <span aria-hidden="true">↘</span></a>
           <a class="button button--outline" href="https://github.com/Tonnyton30" target="_blank"
             rel="noopener noreferrer">View GitHub profile <span aria-hidden="true">↗</span></a>
@@ -103,7 +116,7 @@
           <p>Tools and workflows I use as I build.</p>
         </div>
       </div>
-      <div class="marquee-viewport" aria-label="Skills and technologies">
+      <div class="marquee-viewport" role="region" aria-label="Skills and technologies">
         <div class="marquee">
           <ul class="marquee-track">
             <li>HTML</li>
@@ -220,8 +233,9 @@
         <h2 class="reveal" id="contact-title">Let's Connect.</h2>
         <p class="contact-copy reveal reveal--step-1">Have a question, project idea, or opportunity? Feel free to send
           me an email. I'd be happy to hear from you.</p>
-        <a class="button button--light email-button reveal reveal--step-2" href="mailto:"
-          aria-label="Send Antonio an email (email address not configured)">Send Me an Email <span
+        <a class="button button--light email-button reveal reveal--step-2"
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=antoniotoledo113007%40gmail.com"
+          target="_blank" rel="noopener noreferrer" aria-label="Send Antonio an email">Send Me an Email <span
             aria-hidden="true">↗</span></a>
       </div>
       <footer class="site-footer"><span>ANTONIO TOLEDO</span><span>© 2026</span></footer>

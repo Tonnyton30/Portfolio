@@ -1,8 +1,4 @@
 @media (min-width: 761px) and (max-width: 1024px) {
-  .page-container,
-  .site-footer {
-    width: 92%;
-  }
   .section-heading-row {
     align-items: flex-start;
     flex-direction: column;
@@ -13,12 +9,7 @@
   }
 }
 
-@media (max-width: 768px) {
-  .nav-item,
-  .page-container,
-  .site-footer {
-    width: 90%;
-  }
+@media (max-width: 900px) {
   .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -53,7 +44,7 @@
     right: 0;
     left: 0;
     display: none;
-    padding: 0 20px 1rem;
+    padding: 0 1rem 1rem;
     border-bottom: 1px solid #e8e8e8;
     background: #fff;
   }
@@ -73,7 +64,8 @@
     border-bottom: 1px solid #e8e8e8;
   }
   .hero {
-    height: 90vh;
+    min-height: 90vh;
+    min-height: 90svh;
   }
   .hero-inner {
     height: 100%;
@@ -83,11 +75,11 @@
     top: 24px;
     font-size: 3.5rem;
   }
-  .disc {
+  .hero-subtitle {
     top: 108px;
     font-size: 0.85rem;
   }
-  .phone {
+  .hero-photo {
     top: 116px;
     transform: translateX(-50%);
     bottom: auto;
@@ -97,16 +89,15 @@
     border: 1px solid #000;
     border-radius: 50%;
   }
-  .phone img {
+  .hero-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center 20%;
     transform: none;
     border: 0;
-    border-radius: 50%;
   }
-  .homebutton {
+  .hero-actions {
     right: 0;
     top: auto;
     bottom: 4.45rem;
@@ -114,7 +105,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .homebutton .button {
+  .hero-actions .button {
     width: min(100%, 340px);
   }
   .scroll-note {
@@ -125,7 +116,6 @@
     display: block;
   }
   .card-grid,
-  .card-grid--three,
   .card-grid--two {
     grid-template-columns: 1fr;
   }
@@ -149,12 +139,7 @@
 }
 
 @media (max-width: 420px) {
-  .nav-item,
-  .page-container,
-  .site-footer {
-    width: 92%;
-  }
-  .homebutton {
+  .hero-actions {
     align-items: stretch;
     flex-direction: column;
   }
@@ -170,7 +155,7 @@
 }
 
 @media (hover: hover) {
-  .project-card:not(.project-card--linked),
+  .project-card,
   .cert-card {
     cursor: default;
   }
@@ -191,10 +176,6 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-  }
-  .hero-enter {
-    opacity: 1;
-    transform: none;
   }
   .marquee {
     width: 100%;

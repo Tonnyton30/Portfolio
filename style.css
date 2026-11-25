@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
-
 :root {
   color-scheme: dark;
   --black: #000;
@@ -44,6 +42,11 @@ button:focus-visible {
   outline: 2px solid var(--white);
   outline-offset: 5px;
 }
+.site-header a:focus-visible,
+.hero a:focus-visible,
+.menu-toggle:focus-visible {
+  outline-color: #000;
+}
 ::selection {
   color: var(--black);
   background: var(--white);
@@ -60,10 +63,12 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 82%;
+  width: auto;
+  max-width: 72rem;
   height: 100%;
   min-height: var(--header-height);
   margin-inline: auto;
+  padding-inline: 1rem;
 }
 .logo {
   color: #000;
@@ -103,11 +108,6 @@ button:focus-visible {
 main {
   overflow-x: clip;
 }
-.page-container,
-.section-inner {
-  width: 82%;
-  margin-inline: auto;
-}
 .hero {
   position: relative;
   isolation: isolate;
@@ -121,7 +121,7 @@ main {
 .hero-inner {
   position: relative;
   width: auto;
-  max-width: 82rem;
+  max-width: 72rem;
   height: 760px;
   margin-inline: auto;
   padding-inline: 1rem;
@@ -180,7 +180,7 @@ main {
 .hero-marquee--title .hero-marquee__track {
   animation: hero-marquee-left 26s linear infinite;
 }
-.disc {
+.hero-subtitle {
   position: absolute;
   z-index: 1;
   top: 180px;
@@ -189,7 +189,7 @@ main {
   max-width: none;
   margin: 0;
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.5);
+  color: #767676;
   font:
     400 1rem/1.3 "Space Grotesk",
     sans-serif;
@@ -198,7 +198,7 @@ main {
 .hero-marquee--subtitle .hero-marquee__track {
   animation: hero-marquee-right 34s linear infinite;
 }
-.phone {
+.hero-photo {
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -210,7 +210,7 @@ main {
   background: transparent;
   transform: translateX(-50%);
 }
-.phone img {
+.hero-photo img {
   position: relative;
   z-index: 2;
   display: block;
@@ -220,11 +220,10 @@ main {
   object-position: center bottom; 
   transform: scale(1.3);
   transform-origin: center bottom;
-  border-radius: 0;
   filter: none;
   border-radius: 50%;
 }
-.homebutton {
+.hero-actions {
   position: absolute;
   z-index: 4;
   right: 0;
@@ -291,11 +290,6 @@ main {
   color: #000;
   font-size: 1rem;
 }
-.hero-enter {
-  opacity: 0;
-  animation: fade-rise 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
-}
-
 .content-section {
   width: 100%;
   height: auto;
@@ -403,12 +397,6 @@ main {
   gap: 1.5rem;
   margin-top: 3rem;
 }
-.card-grid--single {
-  grid-template-columns: 1fr;
-}
-.card-grid--three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .card-slot {
   display: flex;
 }
@@ -427,7 +415,6 @@ main {
     transform 0.25s ease,
     border-color 0.25s ease;
 }
-.project-card--linked:hover,
 .cert-card:hover {
   transform: translateY(-3px);
   border-color: var(--white);
@@ -575,9 +562,10 @@ main {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  width: 82%;
+  width: auto;
+  max-width: 72rem;
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem;
   border-top: 1px solid var(--border);
   color: #858585;
   font-size: 0.68rem;
@@ -604,23 +592,9 @@ main {
 .js-ready .reveal--step-2 {
   transition-delay: 0.2s;
 }
-.js-ready .reveal--step-3 {
-  transition-delay: 0.3s;
-}
 .js-ready .card-grid > .card-slot:nth-child(2) {
   transition-delay: 0.1s;
 }
 .js-ready .card-grid > .card-slot:nth-child(3) {
   transition-delay: 0.2s;
-}
-
-@keyframes fade-rise {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
